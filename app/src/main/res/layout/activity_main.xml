@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fef5ef"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btSoekarno"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="I.R. Soekarno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btSoeharto"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Soeharto"
+        app:layout_constraintStart_toEndOf="@+id/btSoekarno"
+        app:layout_constraintTop_toTopOf="@+id/btSoekarno"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/btHabibie"
+        android:layout_width="368dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:text="B.J. Habibie"
+        app:layout_constraintStart_toStartOf="@+id/btSoekarno"
+        app:layout_constraintTop_toBottomOf="@+id/btSoekarno"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btGusdur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gusdur"
+        app:layout_constraintStart_toStartOf="@+id/btHabibie"
+        app:layout_constraintTop_toBottomOf="@+id/btHabibie"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btMegawati"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Megawati"
+        app:layout_constraintStart_toEndOf="@+id/btGusdur"
+        app:layout_constraintTop_toTopOf="@+id/btGusdur"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btSBY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="SBY"
+        app:layout_constraintStart_toEndOf="@+id/btMegawati"
+        app:layout_constraintTop_toTopOf="@+id/btMegawati"
+        tools:ignore="HardcodedText,MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
